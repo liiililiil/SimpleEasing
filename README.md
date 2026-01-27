@@ -1,25 +1,40 @@
 # SimpleEasing
+
 A simple script for easing animations in code, allowing you to apply easing dynamically.
 
+---
+
 ## Using
-#### Import the namespace:
-```
+
+### Import the namespace
+
+```csharp
 using SimpleEasing;
 ```
-#### Use the easing function:
-###### Recommended value range: 0 to 1
+
+### Use the easing function
+
+> Recommended value range: 0 to 1
+
+```csharp
+float easeT = Ease.Easing(value, easeType);
 ```
-float value = Ease.Easing(value, easeType);
-```
-#### Specify the easing type using the EaseType enum:
-```
+
+### Specify the easing type using the EaseType enum
+
+```csharp
 EaseType ease = EaseType.OutCirc;
 ```
 
-## Editor support
-- You can set the EaseType directly in the Inspector.
-- A graph of the selected EaseType is displayed.
+---
 
- 
+## Editor Support
+
+- You can set the `EaseType` directly in the Inspector.  
+- A graph of the selected `EaseType` is displayed for visualization.
+
+---
+
 ## Config
-- Graph settings can be configured via the Config file in the package folder.
+
+- Graph settings can be configured via the `Config` file located in the package folder.
