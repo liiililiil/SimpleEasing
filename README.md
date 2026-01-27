@@ -14,7 +14,7 @@ using SimpleEasing;
 
 ### Use the easing function
 
-> Recommended value range: 0 to 1
+> The `value` must be normalized to work properly.
 
 ```csharp
 float easeT = Ease.Easing(value, easeType);
